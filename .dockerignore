@@ -1,0 +1,9 @@
+.venv
+__pycache__
+.pytest_cache
+.tmp
+.test-tmp
+pytest-cache-files-*
+.git
+data
+benchmark-results

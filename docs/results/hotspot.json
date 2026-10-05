@@ -1,0 +1,65 @@
+{
+  "execution": "embedded-asgi",
+  "initial_placement": "all-cold",
+  "background_tiering": false,
+  "configuration": {
+    "requests": 1000,
+    "concurrency": 4,
+    "key_space": 40,
+    "pattern": "hotspot",
+    "hot_key_percent": 20,
+    "hot_access_percent": 80,
+    "seed": 42,
+    "object_bytes": 4096,
+    "warmup_requests": 0,
+    "hot_capacity_bytes": 32768,
+    "warm_capacity_bytes": 131072,
+    "hot_latency_ms": 1,
+    "warm_latency_ms": 15,
+    "cold_latency_ms": 80
+  },
+  "cold-only": {
+    "requests": 1000,
+    "successful_requests": 1000,
+    "errors": 0,
+    "error_counts": {},
+    "elapsed_seconds": 24.380262100021355,
+    "throughput_requests_per_second": 41.01678627971453,
+    "mean_latency_ms": 97.10836889885832,
+    "p50_latency_ms": 87.50999998301268,
+    "p95_latency_ms": 169.9706700455863,
+    "p99_latency_ms": 232.0653629780281,
+    "tier_hits": {
+      "hot": 0,
+      "warm": 0,
+      "cold": 1000
+    },
+    "promotions": 0,
+    "demotions": 0,
+    "migration_failures": 0
+  },
+  "adaptive": {
+    "requests": 1000,
+    "successful_requests": 1000,
+    "errors": 0,
+    "error_counts": {},
+    "elapsed_seconds": 9.499209400033578,
+    "throughput_requests_per_second": 105.27191873425436,
+    "mean_latency_ms": 37.98669579869602,
+    "p50_latency_ms": 4.774250031914562,
+    "p95_latency_ms": 276.9301000284013,
+    "p99_latency_ms": 517.8623840259387,
+    "tier_hits": {
+      "hot": 652,
+      "warm": 257,
+      "cold": 91
+    },
+    "promotions": 109,
+    "demotions": 62,
+    "migration_failures": 0
+  },
+  "comparison": {
+    "adaptive_mean_latency_improvement_percent": 60.882160590854475,
+    "note": "Negative improvement means adaptive was slower. Errors must be considered."
+  }
+}

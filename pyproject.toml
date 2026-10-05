@@ -1,0 +1,8 @@
+[project]
+name = "atlastier"
+version = "0.1.0"
+description = "Educational adaptive tiered object storage"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 100
